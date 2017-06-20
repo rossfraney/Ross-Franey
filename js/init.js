@@ -17,11 +17,11 @@
 })(jQuery);
 
 $(function() {
-    $('.card').hover(
+    $('.card-image').hover(
         function() {
-            $(this).find('> .card-image > img.activator').click();
+            $(this).find('> img.activator').click();
         }, function() {
-            $(this).find('> .card-reveal > .card-title').click();
+            $(this).parent().find('> .card-reveal > .card-title').click();
         }
     );
 });
