@@ -71,5 +71,41 @@ $(document).ready(function() {
     $(this).find('.card-content>span').attr('style', '');
   });
 
+  $('li').on('click', function(){
+      var clicked = $(this);
+      $('li').each(function(){
+          if($(this).hasClass('active')){
+              $(this).removeClass('active');
+          }
+      });
+      $(this).addClass('active');
+  });
+
+  $(window).scroll(function() {
+    var div;
+    if ($(this).scrollTop() >= $('#_about').offset().top - 100) {
+      div = $('#nav-list > :eq(0)')[0];
+    }
+    if ($(this).scrollTop() >= $('#_work_experience').offset().top - 100) {
+      div = $('#nav-list > :eq(1)')[0];
+    }
+    if ($(this).scrollTop() >= $('#_projects').offset().top - 100) {
+      div = $('#nav-list > :eq(2)')[0];
+    }
+    if ($(this).scrollTop() >= $('#_education').offset().top - 100) {
+      div = $('#nav-list > :eq(3)')[0];
+    }
+    if ($(this).scrollTop() >= $('#_contact').offset().top - 100) {
+      div = $('#nav-list > :eq(4)')[0];
+    }
+
+    $('li').each(function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+        }
+    });
+    $(div).addClass('active');
+  });
+
 });
 }( jQuery ));

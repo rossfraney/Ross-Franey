@@ -26,13 +26,13 @@ a { color: inherit; }
 }
 
 html {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
 }
 
 body {
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .row-spacer {

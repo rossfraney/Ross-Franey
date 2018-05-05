@@ -15,7 +15,7 @@
     <nav class=" light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container" id="nav-anchor">
         <ul class="left hide-on-med-and-down" id="nav-list">
-          <li><a href="#_about">About</a></li>
+          <li class="active"><a href="#_about">About</a></li>
           <li><a href="#_work_experience">Work Experience</a></li>
           <li><a href="#_projects">Projects</a></li>
           <li><a href="#_education">Education</a></li>
@@ -23,7 +23,7 @@
           <li><a href="#_contact">Contact</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
+        <ul id="nav-mobile" class="side-nav" data-target="#nav-list">
           <li><a href="#_about">About</a></li>
           <li><a href="#_work_experience">Work Experience</a></li>
           <li><a href="#_projects">Projects</a></li>
@@ -31,7 +31,7 @@
           <li><a href="resume.pdf" target="_blank">Resume</a></li>
           <li><a href="#_contact">Contact</a></li>
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a id="nav-mobile-button" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
