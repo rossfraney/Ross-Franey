@@ -14,7 +14,8 @@
   <div class="navbar-fixed">
     <nav class=" light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container" id="nav-anchor">
-        <ul class="left hide-on-med-and-down" id="nav-list">
+        <a id="nav-mobile-button" href="#" data-activates="nav-mobile" class="dropdown-trigger mobile-only"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down desktop-only" id="nav-list">
           <li class="active"><a href="#_about">About</a></li>
           <li><a href="#_work_experience">Work Experience</a></li>
           <li><a href="#_projects">Projects</a></li>
@@ -22,14 +23,13 @@
           <li><a href="resume.pdf" target="_blank">Resume</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav" data-target="#nav-list">
+        <ul id="nav-mobile" class="dropdown-content mobile-only">
           <li><a href="#_about">About</a></li>
           <li><a href="#_work_experience">Work Experience</a></li>
           <li><a href="#_projects">Projects</a></li>
           <li><a href="#_education">Education</a></li>
           <li><a href="resume.pdf" target="_blank">Resume</a></li>
         </ul>
-        <a id="nav-mobile-button" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
@@ -40,7 +40,7 @@
       <div class="victor-icon"> </div>
       <div class="row center">
         <!-- <h5 class="header col s12 light">Software Engineer</h5> -->
-        <h1 class="header light-blue-text">Hi I'm Victor!</h1>
+        <h1 class="header light-blue-text" style="margin-top: 5px;">Hi I'm Victor!</h1>
         <p style="text-align: left">
           <font size="4">
           I'm an incoming Master's student pursuing an <b>MS</b> in <b>Computer Science</b> at <b>UC San Diego</b>, expected to finish in Spring 2018.

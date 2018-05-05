@@ -107,5 +107,7 @@ $(document).ready(function() {
     $(div).addClass('active');
   });
 
+  $(".dropdown-trigger").dropdown();
+
 });
 }( jQuery ));
