@@ -95,9 +95,9 @@ $(document).ready(function() {
     if ($(this).scrollTop() >= $('#_education').offset().top - 100) {
       div = $('#nav-list > :eq(3)')[0];
     }
-    if ($(this).scrollTop() >= $('#_contact').offset().top - 100) {
-      div = $('#nav-list > :eq(4)')[0];
-    }
+    // if ($(this).scrollTop() >= $('#_contact').offset().top - 100) {
+    //   div = $('#nav-list > :eq(4)')[0];
+    // }
 
     $('li').each(function(){
         if($(this).hasClass('active')){
