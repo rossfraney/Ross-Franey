@@ -24,3 +24,18 @@ a { color: inherit; }
   border-radius: 135px;
   border: 5px solid #03a9f4;
 }
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+.row-spacer {
+  row: inherit;
+  height: 50px;
+}

@@ -6,15 +6,16 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-(function($){
-	$(document).ready(function(){
-		$("a[href^='#']").click(function(){
-			$(document.body).animate({
-				'scrollTop':   $($(this).attr('href')).offset().top
-			}, 50);
-		})
-	});
-})(jQuery);
+document.querySelectorAll('a[href^="#_"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
 
 (function ($) {
 $(document).ready(function() {
