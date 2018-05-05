@@ -83,16 +83,16 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var div;
-    if ($(this).scrollTop() >= $('#_about').offset().top - 100) {
+    if ($(this).scrollTop() + $(window).height() >= $('#_about').offset().top) {
       div = $('#nav-list > :eq(0)')[0];
     }
-    if ($(this).scrollTop() >= $('#_work_experience').offset().top - 100) {
+    if ($(this).scrollTop() + $(window).height() >= $('#_work_experience').offset().top) {
       div = $('#nav-list > :eq(1)')[0];
     }
-    if ($(this).scrollTop() >= $('#_projects').offset().top - 100) {
+    if ($(this).scrollTop() + $(window).height() >= $('#_projects').offset().top) {
       div = $('#nav-list > :eq(2)')[0];
     }
-    if ($(this).scrollTop() >= $('#_education').offset().top - 100) {
+    if ($(this).scrollTop() + $(window).height() >= $('#_education').offset().top) {
       div = $('#nav-list > :eq(3)')[0];
     }
     // if ($(this).scrollTop() >= $('#_contact').offset().top - 100) {
