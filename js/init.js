@@ -113,7 +113,7 @@ $(document).ready(function() {
     $(div_mobile).addClass('active');
   });
 
-  $("#nav-mobile-button").dropdown({"closeOnClick": false});
+  $("#nav-mobile-button").dropdown({"closeOnClick": true});
 
 });
 }( jQuery ));
